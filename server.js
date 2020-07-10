@@ -5,7 +5,7 @@ const config = require('./config')
 
 console.log(config)
 
-mongoose.connect("mongodb://localhost:27017/fs09-vexere", {
+mongoose.connect(config.mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
